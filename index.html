@@ -1,163 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DU-SATARO-SHIBIR </title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DU-SATARO-SHIBIR</title>
 
     <!-- font awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- tailwind and daisyUI CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
-       .navbar-btn li:hover{
-            background-color: #06B6D4;
-            border-radius: 10px;
-            padding: 5px;
-        
-        }
-        .catagory-btn:hover{
-            background-color: white;
-            color: black;
-            border: 1px solid red;
+      .navbar-btn li:hover {
+        background-color: #06b6d4;
+        border-radius: 10px;
+        padding: 5px;
+      }
+      .catagory-btn:hover {
+        background-color: white;
+        color: black;
+        border: 1px solid red;
+      }
+      .btn:hover {
+        background-color: white;
+        color: black;
+        border: 1px solid red;
+      }
+      .kormosusi-btn:hover {
+        background-color: #06b6d4;
+        color: #ffffff;
+      }
+      .lecture-btn:hover{
+        background-color: white;
+        color: #06b6d4;
+        border-color: #06b6d4;
+      }
+      .container1 {
+  display: flex;
+  flex-direction: column;
+  /* align-items: start; Content ke left side align kora */
+}
 
-        }
-        .btn:hover{
-          background-color: white;
-            color: black;
-            border: 1px solid red;
-        }
-        .kormosusi-btn:hover{
-          background-color: #06B6D4;
-          color:  #FFFFFF;
-        }
+.content {
+  display: flex;
+  align-items: center;
+}
+
+.image {
+  width: 200px;
+  /* height: auto; */
+  margin-right: 10px; /* Dane text er sathe gap */
+}
+
+.side-text {
+  /* width: 150px; Dane text er width */
+}
+
+.bottom-text {
+  width: 100%;
+  margin-top: 10px;
+  text-align: left; /* Niche text ke left e rakhte */
+}
 
     </style>
-
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- header section start here -->
-   <header>
-    <!-- social link -->
-    <div class="container mx-auto flex justify-between py-2 relative hidden lg:block">
-
+    <header>
+      <!-- social link -->
+      <div
+        class="container mx-auto flex justify-between py-2 relative hidden lg:block"
+      >
         <!-- social link  -->
-         <ul class="flex gap-6 text-2xl absolute right-0 ">
-            <li><a class="text-blue-400" href="http://facebook.com" target="_blank"><i class="fa-brands fa-square-facebook"></i></a></li>
+        <ul class="flex gap-6 text-2xl absolute right-0">
+          <li>
+            <a class="text-blue-400" href="http://facebook.com" target="_blank"
+              ><i class="fa-brands fa-square-facebook"></i
+            ></a>
+          </li>
 
-            <li><a class="text-red-500" href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+          <li>
+            <a
+              class="text-red-500"
+              href="https://www.youtube.com/"
+              target="_blank"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+          </li>
 
-            <li><a class="text-blue-400" href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+          <li>
+            <a
+              class="text-blue-400"
+              href="https://www.instagram.com/"
+              target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
 
-            <li><a class="text-cyan-400" href="https://telegram.org/" target="_blank"><i class="fa-brands fa-telegram"></i></a></li>
-            <div>
-                <ul>
-                    <li>
-                        <a href=""><button class="font-bold bg-blue-500 btn text-white px-3 py-1 rounded-lg text-xl">সমর্থক হোন <i class="fa-solid fa-arrow-right -rotate-45"></i></button></a>
-                    </li>
+          <li>
+            <a
+              class="text-cyan-400"
+              href="https://telegram.org/"
+              target="_blank"
+              ><i class="fa-brands fa-telegram"></i
+            ></a>
+          </li>
+          <div>
+            <ul>
+              <li>
+                <a href=""
+                  ><button
+                    class="font-bold bg-blue-500 btn text-white px-3 py-1 rounded-lg text-xl"
+                  >
+                    সমর্থক হোন
+                    <i class="fa-solid fa-arrow-right -rotate-45"></i></button
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </ul>
+      </div>
+
+      <section class="bg-cyan-600 lg:mt-10 lg:p-4">
+        <div class="container mx-auto items-center flex justify-between py-3">
+          <!-- logo  -->
+          <div class="flex items-center px-2 gap-4">
+            <img
+              class="lg:w-20 w-15 lg:-mt-10"
+              src="https://img.icons8.com/?size=100&id=32011&format=png&color=000000"
+              alt=""
+            />
+            <h2
+              class="font-bold lg:-mt-24 lg:leading-12 text-white lg:text-2xl"
+            >
+              <span class="lg:text-black">বাংলাদেশ ইসলামী ছাত্রশিবির</span>
+              <br />
+              ঢাকা বিশ্ববিদ্যালয়
+            </h2>
+          </div>
+
+          <div>
+            <!-- navbar start here -->
+            <div class="navbar-btn navbar-center">
+              <div class="navbar-center hidden lg:block">
+                <ul class="flex flex-wrap gap-5 text-white font-bold">
+                  <li><a href="">হোম</a></li>
+                  <li><a href="">সংক্ষিপ্ত পরিচিতি</a></li>
+                  <li><a href="">ব্লগ</a></li>
+                  <li><a href="">দায়িত্বশীলবৃন্দ</a></li>
+                  <li><a href="">পরামর্শ/এহতেসাব</a></li>
+                  <li><a href="">অনলাইন লাইব্রেরি</a></li>
                 </ul>
-             </div>
-         </ul>
-    </div>
-
-  
-     <section class="bg-cyan-600 lg:mt-10 lg:p-4">
-
-         <div class="container mx-auto items-center flex justify-between py-3">
-            <!-- logo  -->
-            <div class="flex items-center px-2 gap-4">
-                <img class="lg:w-20 w-15 lg:-mt-10" src="https://img.icons8.com/?size=100&id=32011&format=png&color=000000" alt="">
-                <h2 class="font-bold lg:-mt-24 lg:leading-12 text-white lg:text-2xl"><span class="lg:text-black">বাংলাদেশ ইসলামী ছাত্রশিবির</span> <br> ঢাকা বিশ্ববিদ্যালয়</h2>
               </div>
 
-              <div>
-                  <!-- navbar start here -->
-                <div class="navbar-btn navbar-center">
-                   
-                    <div class="navbar-center hidden lg:block">
-                        <ul class="flex flex-wrap gap-5 text-white font-bold ">
-                            <li><a href="">হোম</a></li>
-                            <li><a  href="">সংক্ষিপ্ত পরিচিতি</a></li>
-                            <li><a href="">ব্লগ</a></li>
-                            <li><a href="">দায়িত্বশীলবৃন্দ</a></li>
-                            <li><a href="">পরামর্শ/এহতেসাব</a></li>
-                            <li><a href="">অনলাইন লাইব্রেরি</a></li>
-                        </ul>
-                      
+              <div class="navbar-start z-10 lg:hidden">
+                <div class="dropdown">
+                  <div class="drawer">
+                    <input
+                      id="my-drawer"
+                      type="checkbox"
+                      class="drawer-toggle"
+                    />
+                    <div class="drawer-content">
+                      <!-- Page content here -->
+                      <label for="my-drawer" class="drawer-button">
+                        <div
+                          tabindex="0"
+                          role="button"
+                          class="btn text-white btn-ghost btn-circle"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M4 6h16M4 12h16M4 18h7"
+                            />
+                          </svg></div
+                      ></label>
                     </div>
 
-                    <div class="navbar-start z-10 lg:hidden">
-                        <div class="dropdown">
-                    
-                          <div class="drawer">
-                            <input id="my-drawer" type="checkbox" class="drawer-toggle" />
-                            <div class="drawer-content">
-                              <!-- Page content here -->
-                              <label for="my-drawer" class=" drawer-button">   <div tabindex="0" role="button" class="btn text-white btn-ghost btn-circle">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /> </svg>
-                              </div></label>
-                            </div>
-                           
-                            <div class="drawer-side">
-                               
-                              <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
-                              
-                              <ul class="menu bg-base-200 text-base-content min-h-full w-80 p-4">
-                                <div class="flex rounded-md  bg-cyan-400 items-center gap-4">
-                                    <img class="" src="https://img.icons8.com/?size=100&id=32011&format=png&color=000000" alt="">
-                                    <h2 class="font-bold  text-white"><span class="">বাংলাদেশ ইসলামী ছাত্রশিবির</span> <br> ঢাকা বিশ্ববিদ্যালয়</h2>
-                                  </div>
-                                  <div class="container mx-auto flex justify-between py-12 relative ">
+                    <div class="drawer-side">
+                      <label
+                        for="my-drawer"
+                        aria-label="close sidebar"
+                        class="drawer-overlay"
+                      ></label>
 
-                                    <!-- social link  -->
-                                     <ul class="flex text-xl">
-                                        <li><a class="text-blue-400" href="http://facebook.com" target="_blank"><i class="fa-brands fa-square-facebook"></i></a></li>
-                            
-                                        <li><a class="text-red-500" href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
-                            
-                                        <li><a class="text-blue-400" href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                            
-                                        <li><a class="text-cyan-400" href="https://telegram.org/" target="_blank"><i class="fa-brands fa-telegram"></i></a></li>
-                                        <div>
-                                            <ul>
-                                                <li>
-                                                    <a href=""><button class=" bg-blue-500 text-white p-2  rounded-lg text-xs font-bold">সমর্থক হোন <i class="fa-solid fa-arrow-right -rotate-45"></i></button></a>
-                                                </li>
-                                            </ul>
-                                         </div>
-                                     </ul>
-                                </div>
+                      <ul
+                        class="menu bg-base-200 text-base-content min-h-full w-80 p-4"
+                      >
+                        <div
+                          class="flex rounded-md bg-cyan-400 items-center gap-4"
+                        >
+                          <img
+                            class=""
+                            src="https://img.icons8.com/?size=100&id=32011&format=png&color=000000"
+                            alt=""
+                          />
+                          <h2 class="font-bold text-white">
+                            <span class="">বাংলাদেশ ইসলামী ছাত্রশিবির</span>
+                            <br />
+                            ঢাকা বিশ্ববিদ্যালয়
+                          </h2>
+                        </div>
+                        <div
+                          class="container mx-auto flex justify-between py-12 relative"
+                        >
+                          <!-- social link  -->
+                          <ul class="flex text-xl">
+                            <li>
+                              <a
+                                class="text-blue-400"
+                                href="http://facebook.com"
+                                target="_blank"
+                                ><i class="fa-brands fa-square-facebook"></i
+                              ></a>
+                            </li>
 
-                                <h2 class="bg-violet-800 text-white p-2 font-bold">Menu</h2>
-                                <!-- Sidebar content here -->
-                                <li><a href="">হোম</a></li>
-                                <li><a  href="">সংক্ষিপ্ত পরিচিতি</a></li>
-                                <li><a href="">ব্লগ</a></li>
-                                <li><a href="">দায়িত্বশীলবৃন্দ</a></li>
-                                <li><a href="">পরামর্শ/এহতেসাব</a></li>
-                                <li><a href="">অনলাইন লাইব্রেরি</a></li>
+                            <li>
+                              <a
+                                class="text-red-500"
+                                href="https://www.youtube.com/"
+                                target="_blank"
+                                ><i class="fa-brands fa-youtube"></i
+                              ></a>
+                            </li>
+
+                            <li>
+                              <a
+                                class="text-blue-400"
+                                href="https://www.instagram.com/"
+                                target="_blank"
+                                ><i class="fa-brands fa-instagram"></i
+                              ></a>
+                            </li>
+
+                            <li>
+                              <a
+                                class="text-cyan-400"
+                                href="https://telegram.org/"
+                                target="_blank"
+                                ><i class="fa-brands fa-telegram"></i
+                              ></a>
+                            </li>
+                            <div>
+                              <ul>
+                                <li>
+                                  <a href=""
+                                    ><button
+                                      class="bg-blue-500 text-white p-2 rounded-lg text-xs font-bold"
+                                    >
+                                      সমর্থক হোন
+                                      <i
+                                        class="fa-solid fa-arrow-right -rotate-45"
+                                      ></i></button
+                                  ></a>
+                                </li>
                               </ul>
                             </div>
-                          </div>
+                          </ul>
                         </div>
-                      </div>
-                  
+
+                        <h2 class="bg-violet-800 text-white p-2 font-bold">
+                          Menu
+                        </h2>
+                        <!-- Sidebar content here -->
+                        <li><a href="">হোম</a></li>
+                        <li><a href="">সংক্ষিপ্ত পরিচিতি</a></li>
+                        <li><a href="">ব্লগ</a></li>
+                        <li><a href="">দায়িত্বশীলবৃন্দ</a></li>
+                        <li><a href="">পরামর্শ/এহতেসাব</a></li>
+                        <li><a href="">অনলাইন লাইব্রেরি</a></li>
+                      </ul>
+                    </div>
                   </div>
+                </div>
               </div>
-         </div>
-     </section>
+            </div>
+          </div>
+        </div>
+      </section>
 
-     <!-- crosula  banner section  -->
+      <!-- crosula  banner section  -->
 
-     <div class="carousel w-full">
+      <div class="carousel w-full">
         <div id="slide1" class="carousel-item relative w-full">
           <img
             src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp"
-            class="w-full" />
-          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            class="w-full"
+          />
+          <div
+            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+          >
             <a href="#slide4" class="btn btn-circle">❮</a>
             <a href="#slide2" class="btn btn-circle">❯</a>
           </div>
@@ -165,8 +317,11 @@
         <div id="slide2" class="carousel-item relative w-full">
           <img
             src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
-            class="w-full" />
-          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            class="w-full"
+          />
+          <div
+            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+          >
             <a href="#slide1" class="btn btn-circle">❮</a>
             <a href="#slide3" class="btn btn-circle">❯</a>
           </div>
@@ -174,8 +329,11 @@
         <div id="slide3" class="carousel-item relative w-full">
           <img
             src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
-            class="w-full" />
-          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            class="w-full"
+          />
+          <div
+            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+          >
             <a href="#slide2" class="btn btn-circle">❮</a>
             <a href="#slide4" class="btn btn-circle">❯</a>
           </div>
@@ -183,83 +341,191 @@
         <div id="slide4" class="carousel-item relative w-full">
           <img
             src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
-            class="w-full" />
-          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            class="w-full"
+          />
+          <div
+            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+          >
             <a href="#slide3" class="btn btn-circle">❮</a>
             <a href="#slide1" class="btn btn-circle">❯</a>
           </div>
         </div>
       </div>
-   </header>
-   <!-- header section end here -->
+    </header>
+    <!-- header section end here -->
 
     <!-- main section start here -->
-   <main class="container mx-auto py-8">
-   <!-- catagory btn -->
-    <div>
+    <main class="container mx-auto py-8">
+      <!-- catagory btn -->
+      <div>
         <ul class="flex flex-wrap gap-8 justify-center text-center">
-            <li class=" catagory-btn bg-cyan-800 w-44 lg:w-[355px] px-10 rounded-md py-2 lg:py-5 text-white font-bold"><a class="flex items-center justify-center gap-6 text-xl" href=""><i class="fa-solid fa-thumbs-up"></i>সমর্থক ফরম</a></li>
-            <li class="catagory-btn bg-purple-500 w-44 lg:w-[355px]  px-10 rounded-md py-2 lg:py-5 text-white font-bold"><a class="flex items-center justify-center gap-6 text-xl"><i class="fa-solid fa-newspaper"></i>সংবাদ</a></li>
-            <li class="catagory-btn  bg-cyan-500 w-44 lg:w-[355px] px-10 rounded-md py-2 lg:py-5 text-white font-bold"><a class="flex items-center justify-center gap-6 text-xl"><i class="fa-solid fa-user-graduate"></i>সিলেবাস</a></li>
-            <li class="catagory-btn bg-blue-400 w-44 lg:w-[355px] px-10 rounded-md py-2 lg:py-5 text-white font-bold"><a class="flex items-center justify-center gap-6 text-xl"><i class="fa-solid fa-user-graduate"></i>শিক্ষাবৃত্তির আবেদন</a></li>
+          <li
+            class="catagory-btn bg-cyan-800 w-44 lg:w-[355px] px-10 rounded-md py-2 lg:py-5 text-white font-bold"
+          >
+            <a class="flex items-center justify-center gap-6 text-xl" href=""
+              ><i class="fa-solid fa-thumbs-up"></i>সমর্থক ফরম</a
+            >
+          </li>
+          <li
+            class="catagory-btn bg-purple-500 w-44 lg:w-[355px] px-10 rounded-md py-2 lg:py-5 text-white font-bold"
+          >
+            <a class="flex items-center justify-center gap-6 text-xl"
+              ><i class="fa-solid fa-newspaper"></i>সংবাদ</a
+            >
+          </li>
+          <li
+            class="catagory-btn bg-cyan-500 w-44 lg:w-[355px] px-10 rounded-md py-2 lg:py-5 text-white font-bold"
+          >
+            <a class="flex items-center justify-center gap-6 text-xl"
+              ><i class="fa-solid fa-user-graduate"></i>সিলেবাস</a
+            >
+          </li>
+          <li
+            class="catagory-btn bg-blue-400 w-44 lg:w-[355px] px-10 rounded-md py-2 lg:py-5 text-white font-bold"
+          >
+            <a class="flex items-center justify-center gap-6 text-xl"
+              ><i class="fa-solid fa-user-graduate"></i>শিক্ষাবৃত্তির আবেদন</a
+            >
+          </li>
         </ul>
-    </div>
-
-
-    <!-- somkipto porisity seciton -->
-    <section class="py-12">
-        <div class="lg:flex gap-7 p-4 justify-center">
-
-            <div class="bg-gradient-to-l from-red-500 to-red-900 rounded-tr-xl rounded-bl-xl lg:flex justify-center items-center text-center flex-col gap-10 p-4  w-1/2 h-90 hidden lg:block">
-           <img src="https://img.icons8.com/?size=100&id=32011&format=png&color=000000" alt="">
-           <h1 class="text-white font-bold text-2xl">বাংলাদেশ ইসলামী ছাত্রশিবির</h1>
-            </div>
-
-            <div class="bg-gradient-to-r from-cyan-800 to-cyan-400 rounded-tl-xl rounded-br-xl text-white p-6 h-90  lg:w-1/2">
-               <h1 class="font-bold text-xl">সংক্ষিপ্ত পরিচিতি</h1>
-               <h3 class="font-semibold my-3">বাংলাদেশ ইসলামী ছাত্রশিবির</h3>
-               <p class="py-5">দেশের প্রতিটি জনপদে কাজ করে যাচ্ছে বাংলাদেশ ইসলামী ছাত্রশিবির। শিবির একজন তরুণকে একই সাথে একজন ভাল ছাত্র ও একজন ভাল মুসলমান হিসেবে গড়ে তুলতে চেষ্টা করে।
-                ইসলাম সকল মানুষের কল্যাণের জন্য; তাই ইসলামী ছাত্রশিবির মুসলমান, হিন্দু, বৌদ্ধ ও খ্রিস্টানসহ সবার কাছে ইসলামের সুমহান সৌন্দর্যকে সুন্দরভাবে তুলে ধরার কর্মসূচি নিয়ে এগিয়ে যাচ্ছে। তাই এই সুন্দর কর্মসূচি ও চরিত্রবান কর্মীদের প্রতি দিন দিন জনসমর্থন বাড়ছে। আসুন, আপনিও শিবিরের পতাকাতলে সমবেত হয়ে নিজেকে গড়ে তুলুন সুন্দর ও যোগ্যতম ব্যক্তি হিসেবে। শরিক হউন ইহকাল ও পরকালের মুক্তিকামী মানুষের এই কাফেলায়।</p>
-              <ul>
-                <li><a href=""><button class="font-bold bg-cyan-500 btn text-white px-3 py-1 rounded-lg border-none ">বিস্তারিত দেখুন <i class="fa-solid fa-arrow-right"></i></button></a></li>
-              </ul>
-          
-            </div>
-        </div>
-    </section>
-
-    <!-- amader loko abon hoddoso section -->
-    <section>
-      <div class="lg:flex lg:gap-6 p-4 ">
-        <div class="bg-slate-200 mb-8 rounded-md p-4 h-76" >
-            <h1 class="font-bold text-xl text-cyan-500 py-6">আমাদের লক্ষ্য ও উদ্দেশ্য</h1>
-            <p class="py-5">আল্লাহ প্রদত্ত ও রাসূল (সাঃ) প্রদর্শিত বিধান অনুযায়ী মানুষের সার্বিক জীবনের পুনর্বিন্যাস সাধন করে আল্লাহর সন্তোষ অর্জন।</p>
-        </div>
-        <div class="bg-slate-200 rounded-lg p-4 h-76 ">
-          <h1 class="font-bold text-cyan-400 text-xl py-6 ">৫ দফা কর্মসূচি</h1>
-          <div>
-            <ul class="flex gap-4 py-5 flex-wrap">
-              <li class=" kormosusi-btn bg-white rounded-md px-5 py-2"><a href="">দাওয়াত</a></li>
-              <li class="kormosusi-btn bg-white rounded-md px-5 py-2"><a href="">সংগঠন</a></li>
-              <li class="kormosusi-btn bg-white rounded-md px-5 py-2"><a href="">প্রশিক্ষণ</a></li>
-              <li class="kormosusi-btn bg-white rounded-md px-5 py-2"><a href="">ইসলামী শিক্ষা আন্দোলন ও ছাত্রসমস্যার সমাধান</a></li>
-              <li class="kormosusi-btn bg-white rounded-md px-5 py-2"><a href="">ইসলামী সমাজ বিনির্মাণ</a></li>
-            </ul>
-          </div>
-
-        </div>
       </div>
 
-    </section>
+      <!-- somkipto porisity seciton -->
+      <section class="py-12">
+        <div class="lg:flex gap-7 p-4 justify-center">
+          <div
+            class="bg-gradient-to-l from-red-500 to-red-900 rounded-tr-xl rounded-bl-xl lg:flex justify-center items-center text-center flex-col gap-10 p-4 w-1/2 h-90 hidden lg:block"
+          >
+            <img
+              src="https://img.icons8.com/?size=100&id=32011&format=png&color=000000"
+              alt=""
+            />
+            <h1 class="text-white font-bold text-2xl">
+              বাংলাদেশ ইসলামী ছাত্রশিবির
+            </h1>
+          </div>
 
+          <div
+            class="bg-gradient-to-r from-cyan-800 to-cyan-400 rounded-tl-xl rounded-br-xl text-white p-6 lg:h-90 lg:w-1/2"
+          >
+            <h1 class="font-bold text-xl">সংক্ষিপ্ত পরিচিতি</h1>
+            <h3 class="font-semibold my-3">বাংলাদেশ ইসলামী ছাত্রশিবির</h3>
+            <p class="py-5">
+              দেশের প্রতিটি জনপদে কাজ করে যাচ্ছে বাংলাদেশ ইসলামী ছাত্রশিবির।
+              শিবির একজন তরুণকে একই সাথে একজন ভাল ছাত্র ও একজন ভাল মুসলমান
+              হিসেবে গড়ে তুলতে চেষ্টা করে। ইসলাম সকল মানুষের কল্যাণের জন্য; তাই
+              ইসলামী ছাত্রশিবির মুসলমান, হিন্দু, বৌদ্ধ ও খ্রিস্টানসহ সবার কাছে
+              ইসলামের সুমহান সৌন্দর্যকে সুন্দরভাবে তুলে ধরার কর্মসূচি নিয়ে এগিয়ে
+              যাচ্ছে। তাই এই সুন্দর কর্মসূচি ও চরিত্রবান কর্মীদের প্রতি দিন দিন
+              জনসমর্থন বাড়ছে। আসুন, আপনিও শিবিরের পতাকাতলে সমবেত হয়ে নিজেকে গড়ে
+              তুলুন সুন্দর ও যোগ্যতম ব্যক্তি হিসেবে। শরিক হউন ইহকাল ও পরকালের
+              মুক্তিকামী মানুষের এই কাফেলায়।
+            </p>
+            <ul>
+              <li>
+                <a href=""
+                  ><button
+                    class="font-bold bg-cyan-500 btn text-white px-3 py-1 rounded-lg border-none"
+                  >
+                    বিস্তারিত দেখুন
+                    <i class="fa-solid fa-arrow-right"></i></button
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-   </main>
-   <!-- main section end here -->
+      <!-- amader loko abon hoddoso section -->
+      <section>
+        <div class="lg:flex lg:gap-6 p-4">
+          <div class="bg-slate-200 mb-8 rounded-md p-4 h-76">
+            <h1 class="font-bold text-xl text-cyan-500 py-6">
+              আমাদের লক্ষ্য ও উদ্দেশ্য
+            </h1>
+            <p class="py-5">
+              আল্লাহ প্রদত্ত ও রাসূল (সাঃ) প্রদর্শিত বিধান অনুযায়ী মানুষের
+              সার্বিক জীবনের পুনর্বিন্যাস সাধন করে আল্লাহর সন্তোষ অর্জন।
+            </p>
+          </div>
+          <div class="bg-slate-200 rounded-lg p-4 h-76">
+            <h1 class="font-bold text-cyan-400 text-xl py-6">৫ দফা কর্মসূচি</h1>
+            <div>
+              <ul class="flex gap-4 py-5 flex-wrap">
+                <li class="kormosusi-btn bg-white rounded-md px-5 py-2">
+                  <a href="">দাওয়াত</a>
+                </li>
+                <li class="kormosusi-btn bg-white rounded-md px-5 py-2">
+                  <a href="">সংগঠন</a>
+                </li>
+                <li class="kormosusi-btn bg-white rounded-md px-5 py-2">
+                  <a href="">প্রশিক্ষণ</a>
+                </li>
+                <li class="kormosusi-btn bg-white rounded-md px-5 py-2">
+                  <a href="">ইসলামী শিক্ষা আন্দোলন ও ছাত্রসমস্যার সমাধান</a>
+                </li>
+                <li class="kormosusi-btn bg-white rounded-md px-5 py-2">
+                  <a href="">ইসলামী সমাজ বিনির্মাণ</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- sovaputi lecture section -->
+      <section class="p-4 md:hidden">
+        <div class=" text-white flex flex-col  bg-gradient-to-r from-red-500 to-blue-500 rounded-lg p-4">
+
+          <div class="flex">
+
+            <img class="w-[200px] h-52 object-cover mr-6 rounded-3xl bg-white p-2" src="https://thumbs.dreamstime.com/z/arab-male-hand-rise-open-palm-asking-help-share-giving-donation-concept-happy-smile-arab-male-hand-rise-open-palm-269009410.jpg?ct=jpeg" alt="" />
+  
+          <div class="">
+            <h2 class="text-sm  py-3">সভাপতির শুভেচ্ছা বক্তব্য</h2>
+            <h1 class="font-bold mb-4">এস এম ফরহাদ</h1>
+            <p class="">এদেশকে একটি সমৃদ্ধ, স্বনির্ভর দেশ হিসেবে গড়ে তোলার লক্ষ্যে বাংলাদেশ ইসলামী </p>
+            </div>
+          </div>
+
+            <div class="mt-3">
+              <span class="">ছাত্রশিবির সৎ, দক্ষ ও দেশপ্রেমিক নেতৃত্ব তৈরির প্রকল্প নিয়ে প্রতিষ্ঠাকালীন সময় থেকেই  একাগ্রতার সাথে কাজ করে যাচ্ছে। ১৯৭৭ সালের ৬ ফেব্রুয়ারী ঢাকা বিশ্ববিদ্যালয়ের কেন্দ্রীয় জামে মসজিদ থেকে যাত্রা শুরু করে ইসলামী ছাত্রশিবির। সে লগ্ন থেকে অদ্যাবধি দেশের ক্রান্তিকালীন সময়ে সম্মুখ সারিতে থেকে সংকট উত্তরণে সাহসী ও বুদ্ধিদীপ্ত ভূমিকা রেখেছে এ সংগঠন।</span></p>
+              <ul class="py-4">
+                <li class="border rounded-md max-w-max px-4 p-2 font-bold lecture-btn"><a href="">বিস্তারিত দেখুন <i class="fa-solid fa-arrow-right -rotate-45"></i></a></li>
+              </ul>
+            </div>
+    
+        </div>
+
+      </section>
+
+        <!-- for large screen sovaputi lecture section --> 
+      <section class="hidden md:block">
+
+        <div class="flex justify-center gap-8 items-center text-white bg-gradient-to-r from-red-500 to-blue-500 rounded-lg p-6">
+          <div  >
+            <img class=" lg:w-1/2 mx-auto rounded-3xl bg-white p-2" src="https://thumbs.dreamstime.com/z/arab-male-hand-rise-open-palm-asking-help-share-giving-donation-concept-happy-smile-arab-male-hand-rise-open-palm-269009410.jpg?ct=jpeg" alt="" />
+          </div>
+          <div>
+            <h2 class="font-semibold  py-3">সভাপতির শুভেচ্ছা বক্তব্য</h2>
+            <h1 class="font-bold text-xl mb-4">এস এম ফরহাদ</h1>
+            <p class="">এদেশকে একটি সমৃদ্ধ, স্বনির্ভর দেশ হিসেবে গড়ে তোলার লক্ষ্যে বাংলাদেশ ইসলামী ছাত্রশিবির সৎ, দক্ষ ও দেশপ্রেমিক নেতৃত্ব তৈরির প্রকল্প নিয়ে প্রতিষ্ঠাকালীন সময় থেকেই  একাগ্রতার সাথে কাজ করে যাচ্ছে। ১৯৭৭ সালের ৬ ফেব্রুয়ারী ঢাকা বিশ্ববিদ্যালয়ের কেন্দ্রীয় জামে মসজিদ থেকে যাত্রা শুরু করে ইসলামী ছাত্রশিবির। সে লগ্ন থেকে অদ্যাবধি দেশের ক্রান্তিকালীন সময়ে সম্মুখ সারিতে থেকে সংকট উত্তরণে সাহসী ও বুদ্ধিদীপ্ত ভূমিকা রেখেছে এ সংগঠন। </p>
+            <ul class="py-6">
+              <li class="border rounded-md max-w-max px-4 p-2 font-bold lecture-btn"><a href="">বিস্তারিত দেখুন <i class="fa-solid fa-arrow-right -rotate-45"></i></a></li>
+            </ul>
+
+          </div>
+        </div>
+
+      </section>
+    </main>
+
+    
+    <!-- main section end here -->
 
     <!-- footer section start here -->
-   <footer>
-
-   </footer>
+    <footer></footer>
     <!-- footer section end here -->
-</body>
+  </body>
 </html>
+
