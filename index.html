@@ -13,7 +13,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
        .navbar-btn li:hover{
-            background-color: cyan;
+            background-color: #06B6D4;
             border-radius: 10px;
             padding: 5px;
         
@@ -23,6 +23,15 @@
             color: black;
             border: 1px solid red;
 
+        }
+        .btn:hover{
+          background-color: white;
+            color: black;
+            border: 1px solid red;
+        }
+        .kormosusi-btn:hover{
+          background-color: #06B6D4;
+          color:  #FFFFFF;
         }
 
     </style>
@@ -47,7 +56,7 @@
             <div>
                 <ul>
                     <li>
-                        <a href=""><button class="font-bold bg-blue-500 text-white px-3 py-1 rounded-lg text-xl">সমর্থক হোন <i class="fa-solid fa-arrow-right -rotate-45"></i></button></a>
+                        <a href=""><button class="font-bold bg-blue-500 btn text-white px-3 py-1 rounded-lg text-xl">সমর্থক হোন <i class="fa-solid fa-arrow-right -rotate-45"></i></button></a>
                     </li>
                 </ul>
              </div>
@@ -55,7 +64,7 @@
     </div>
 
   
-     <section class="bg-blue-600 lg:mt-10 lg:p-4">
+     <section class="bg-cyan-600 lg:mt-10 lg:p-4">
 
          <div class="container mx-auto items-center flex justify-between py-3">
             <!-- logo  -->
@@ -196,21 +205,53 @@
         </ul>
     </div>
 
+
+    <!-- somkipto porisity seciton -->
     <section class="py-12">
-        <!-- somkipto porisity seciton -->
         <div class="lg:flex gap-7 p-4 justify-center">
-            <div class="bg-gradient-to-l from-red-500 to-red-900 rounded-tr-xl rounded-bl-xl flex justify-center items-center text-center flex-col gap-10 p-4  w-1/2 h-86 hidden lg:block">
+
+            <div class="bg-gradient-to-l from-red-500 to-red-900 rounded-tr-xl rounded-bl-xl lg:flex justify-center items-center text-center flex-col gap-10 p-4  w-1/2 h-90 hidden lg:block">
            <img src="https://img.icons8.com/?size=100&id=32011&format=png&color=000000" alt="">
            <h1 class="text-white font-bold text-2xl">বাংলাদেশ ইসলামী ছাত্রশিবির</h1>
             </div>
-            <div class="bg-gradient-to-r from-cyan-800 to-cyan-400 rounded-tl-xl rounded-br-xl text-white p-6  lg:w-1/2">
+
+            <div class="bg-gradient-to-r from-cyan-800 to-cyan-400 rounded-tl-xl rounded-br-xl text-white p-6 h-90  lg:w-1/2">
                <h1 class="font-bold text-xl">সংক্ষিপ্ত পরিচিতি</h1>
                <h3 class="font-semibold my-3">বাংলাদেশ ইসলামী ছাত্রশিবির</h3>
-               <p>দেশের প্রতিটি জনপদে কাজ করে যাচ্ছে বাংলাদেশ ইসলামী ছাত্রশিবির। শিবির একজন তরুণকে একই সাথে একজন ভাল ছাত্র ও একজন ভাল মুসলমান হিসেবে গড়ে তুলতে চেষ্টা করে।
-                ইসলাম সকল মানুষের কল্যাণের জন্য; তাই ইসলামী ছাত্রশিবির মুসলমান, হিন্দু, বৌদ্ধ ও খ্রিস্টানসহ সবার কাছে ইসলামের সুমহান সৌন্দর্যকে সুন্দরভাবে তুলে ধরার কর্মসূচি নিয়ে এগিয়ে যাচ্ছে। তাই এই সুন্দর কর্মসূচি ও চরিত্রবান কর্মীদের প্রতি দিন দিন জনসমর্থন বাড়ছে। আসুন, আপনিও শিবিরের পতাকাতলে সমবেত হয়ে নিজেকে গড়ে তুলুন সুন্দর ও যোগ্যতম ব্যক্তি হিসেবে। শরিক হউন ইহকাল ও পরকালের মুক্তিকামী মানুষের এই কাফেলায়।</p></p>
+               <p class="py-5">দেশের প্রতিটি জনপদে কাজ করে যাচ্ছে বাংলাদেশ ইসলামী ছাত্রশিবির। শিবির একজন তরুণকে একই সাথে একজন ভাল ছাত্র ও একজন ভাল মুসলমান হিসেবে গড়ে তুলতে চেষ্টা করে।
+                ইসলাম সকল মানুষের কল্যাণের জন্য; তাই ইসলামী ছাত্রশিবির মুসলমান, হিন্দু, বৌদ্ধ ও খ্রিস্টানসহ সবার কাছে ইসলামের সুমহান সৌন্দর্যকে সুন্দরভাবে তুলে ধরার কর্মসূচি নিয়ে এগিয়ে যাচ্ছে। তাই এই সুন্দর কর্মসূচি ও চরিত্রবান কর্মীদের প্রতি দিন দিন জনসমর্থন বাড়ছে। আসুন, আপনিও শিবিরের পতাকাতলে সমবেত হয়ে নিজেকে গড়ে তুলুন সুন্দর ও যোগ্যতম ব্যক্তি হিসেবে। শরিক হউন ইহকাল ও পরকালের মুক্তিকামী মানুষের এই কাফেলায়।</p>
+              <ul>
+                <li><a href=""><button class="font-bold bg-cyan-500 btn text-white px-3 py-1 rounded-lg border-none ">বিস্তারিত দেখুন <i class="fa-solid fa-arrow-right"></i></button></a></li>
+              </ul>
+          
             </div>
         </div>
     </section>
+
+    <!-- amader loko abon hoddoso section -->
+    <section>
+      <div class="lg:flex lg:gap-6 p-4 ">
+        <div class="bg-slate-200 mb-8 rounded-md p-4 h-76" >
+            <h1 class="font-bold text-xl text-cyan-500 py-6">আমাদের লক্ষ্য ও উদ্দেশ্য</h1>
+            <p class="py-5">আল্লাহ প্রদত্ত ও রাসূল (সাঃ) প্রদর্শিত বিধান অনুযায়ী মানুষের সার্বিক জীবনের পুনর্বিন্যাস সাধন করে আল্লাহর সন্তোষ অর্জন।</p>
+        </div>
+        <div class="bg-slate-200 rounded-lg p-4 h-76 ">
+          <h1 class="font-bold text-cyan-400 text-xl py-6 ">৫ দফা কর্মসূচি</h1>
+          <div>
+            <ul class="flex gap-4 py-5 flex-wrap">
+              <li class=" kormosusi-btn bg-white rounded-md px-5 py-2"><a href="">দাওয়াত</a></li>
+              <li class="kormosusi-btn bg-white rounded-md px-5 py-2"><a href="">সংগঠন</a></li>
+              <li class="kormosusi-btn bg-white rounded-md px-5 py-2"><a href="">প্রশিক্ষণ</a></li>
+              <li class="kormosusi-btn bg-white rounded-md px-5 py-2"><a href="">ইসলামী শিক্ষা আন্দোলন ও ছাত্রসমস্যার সমাধান</a></li>
+              <li class="kormosusi-btn bg-white rounded-md px-5 py-2"><a href="">ইসলামী সমাজ বিনির্মাণ</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
 
    </main>
    <!-- main section end here -->
