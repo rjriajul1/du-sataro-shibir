@@ -46,32 +46,34 @@
         color: #06b6d4;
         border-color: #06b6d4;
       }
-      .container1 {
-  display: flex;
-  flex-direction: column;
-  /* align-items: start; Content ke left side align kora */
-}
+      .news-btn:hover{
+        background-color: white;
+        color: #06b6d4;
+        border: 1px solid #06b6d4;
+        border-radius: 10px;
+         
+      }
+      .du-porisity-btn:hover{
+        border: 1px solid #06b6d4;
+        border-radius: 10px;
+        color: #06b6d4;
 
-.content {
-  display: flex;
-  align-items: center;
-}
+      }
+     .border-style{
+      border: 2px dashed #06b6d4 ;
+      border-top-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+      border-top: none;
+      border-right: none;
+      padding-bottom: 10px;
+      
+     }
 
-.image {
-  width: 200px;
-  /* height: auto; */
-  margin-right: 10px; /* Dane text er sathe gap */
-}
 
-.side-text {
-  /* width: 150px; Dane text er width */
-}
 
-.bottom-text {
-  width: 100%;
-  margin-top: 10px;
-  text-align: left; /* Niche text ke left e rakhte */
-}
+
+
 
     </style>
   </head>
@@ -355,9 +357,9 @@
     <!-- header section end here -->
 
     <!-- main section start here -->
-    <main class="container mx-auto py-8">
+    <main>
       <!-- catagory btn -->
-      <div>
+      <div class="container mx-auto py-8">
         <ul class="flex flex-wrap gap-8 justify-center text-center">
           <li
             class="catagory-btn bg-cyan-800 w-44 lg:w-[355px] px-10 rounded-md py-2 lg:py-5 text-white font-bold"
@@ -391,7 +393,7 @@
       </div>
 
       <!-- somkipto porisity seciton -->
-      <section class="py-12">
+      <section class="py-12 container mx-auto">
         <div class="lg:flex gap-7 p-4 justify-center">
           <div
             class="bg-gradient-to-l from-red-500 to-red-900 rounded-tr-xl rounded-bl-xl lg:flex justify-center items-center text-center flex-col gap-10 p-4 w-1/2 h-90 hidden lg:block"
@@ -437,7 +439,7 @@
       </section>
 
       <!-- amader loko abon hoddoso section -->
-      <section>
+      <section class="container mx-auto py-8">
         <div class="lg:flex lg:gap-6 p-4">
           <div class="bg-slate-200 mb-8 rounded-md p-4 h-76">
             <h1 class="font-bold text-xl text-cyan-500 py-6">
@@ -474,7 +476,7 @@
       </section>
 
       <!-- sovaputi lecture section -->
-      <section class="p-4 md:hidden">
+      <section class="p-4 md:hidden container mx-auto py-8">
         <div class=" text-white flex flex-col  bg-gradient-to-r from-red-500 to-blue-500 rounded-lg p-4">
 
           <div class="flex">
@@ -500,7 +502,7 @@
       </section>
 
         <!-- for large screen sovaputi lecture section --> 
-      <section class="hidden md:block">
+      <section class="hidden md:block container mx-auto py-8">
 
         <div class="flex justify-center gap-8 items-center text-white bg-gradient-to-r from-red-500 to-blue-500 rounded-lg p-6">
           <div  >
@@ -518,6 +520,102 @@
         </div>
 
       </section>
+
+      <!-- news section  -->
+       <section class="py-10 container mx-auto py-8">
+        <div class="flex justify-between items-center p-4">
+          <h1 class="md:text-2xl text-xl font-bold">পত্রপত্রিকায় প্রকাশিত সংবাদসমূহ</h1>
+          <ul>
+            <li><a href=""><button class=" news-btn border-none text-white bg-cyan-600 font-bold text-xl md:px-4 md:py-2 px-2 py-1 rounded-md">আরো দেখুন <i class="fa-solid fa-arrow-right -rotate-45"></i></button></a></li>
+          </ul>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
+          <!-- one cart -->
+          <div class="bg-white shadow-md rounded-md p-6 mt-10 ">
+           <img class="rounded-md object-cover" src="https://media.istockphoto.com/id/2094337676/photo/diverse-team-working-together-in-modern-co-working-space.jpg?s=612x612&w=is&k=20&c=8Yn-zi9320e0INMImBvZgTlv-hKzSRLl5RD9N_E45Jw=" alt="This image is don't show now">
+           <h1 class="text-xl font-bold  py-4">ঢাকা বিশ্ববিদ্যালয়ের নবীন লেখকদের সংবর্ধিত করলো ঢাকা বিশ্ববিদ্যালয় ছাত্রশিবির</h1>
+           <div class="flex gap-2 items-center">
+            <i class="fa-solid fa-calendar-days"></i>
+            <data class="text-gray-500 font-semibold current-data"></data>
+            <p class="text-cyan-400">সুত্র: দৈনিক ইনকিলাব</p>
+           </div>
+          </div>
+          <!-- two cart -->
+          <div class="bg-white shadow-md rounded-md p-6 mt-10">
+           <img class="rounded-md  object-cover" src="https://media.istockphoto.com/id/2094337676/photo/diverse-team-working-together-in-modern-co-working-space.jpg?s=612x612&w=is&k=20&c=8Yn-zi9320e0INMImBvZgTlv-hKzSRLl5RD9N_E45Jw=" alt="This image is don't show now">
+           <h1 class="text-xl font-bold  py-4">ঢাকা বিশ্ববিদ্যালয়ের নবীন লেখকদের সংবর্ধিত করলো ঢাকা বিশ্ববিদ্যালয় ছাত্রশিবির</h1>
+           <div class="flex gap-2 items-center">
+            <i class="fa-solid fa-calendar-days"></i>
+            <data class="text-gray-500 font-semibold current-data"></data>
+            <p class="text-cyan-400">সুত্র: দৈনিক ইনকিলাব</p>
+           </div>
+          </div>
+          <!-- three cart -->
+          <div class="bg-white shadow-md rounded-md p-6 mt-10 ">
+           <img class="rounded-md object-cover" src="https://media.istockphoto.com/id/2094337676/photo/diverse-team-working-together-in-modern-co-working-space.jpg?s=612x612&w=is&k=20&c=8Yn-zi9320e0INMImBvZgTlv-hKzSRLl5RD9N_E45Jw=" alt="This image is don't show now">
+           <h1 class="text-xl font-bold py-4">ঢাকা বিশ্ববিদ্যালয়ের নবীন লেখকদের সংবর্ধিত করলো ঢাকা বিশ্ববিদ্যালয় ছাত্রশিবির</h1>
+           <div class="flex gap-2 items-center">
+            <i class="fa-solid fa-calendar-days"></i>
+            <data class="text-gray-500 font-semibold current-data"></data>
+            <p class="text-cyan-400">সুত্র: দৈনিক ইনকিলাব</p>
+           </div>
+          </div>
+
+        </div>
+
+       </section>
+
+       <!-- dhaka university porisity -->
+
+       <section class="bg-slate-200">
+        <div class=" container mx-auto py-8 lg:flex gap-6">
+          <div class="p-4 ">
+
+            <div class="carousel h-full  border-style">
+              <div id="item1" class="carousel-item w-full">
+                <img 
+                  src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp"
+                  class="w-full object-cover rounded-md" />
+              </div>
+              <div id="item2" class="carousel-item w-full">
+                <img
+                  src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
+                  class="w-full object-cover rounded-md" />
+              </div>
+              <div id="item3" class="carousel-item w-full">
+                <img
+                  src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
+                  class="w-full object-cover rounded-md" />
+              </div>
+              <div id="item4" class="carousel-item w-full">
+                <img
+                  src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
+                  class="w-full object-cover rounded-md" />
+              </div>
+            </div>
+            <div class="flex  justify-center gap-2 py-2">
+              <a href="#item1" class="btn btn-xs">1</a>
+              <a href="#item2" class="btn btn-xs">2</a>
+              <a href="#item3" class="btn btn-xs">3</a>
+              <a href="#item4" class="btn btn-xs">4</a>
+            </div>
+
+          </div>
+          <div class="p-4">
+          <h1 class="text-xl font-bold py-4 lg:pb-4 lg:py-0">ঢাকা বিশ্ববিদ্যালয় পরিচিতি</h1>
+            <ul class="flex flex-wrap gap-5 py-6 ">
+              <li><a href=""> <button class="bg-white px-4 py-2 rounded-md du-porisity-btn"> বিশ্ববিদ্যালয় পরিচিতি</button></a></li>
+              <li><a href=""><button class="bg-white px-4 py-2 rounded-md du-porisity-btn">ডিপার্টমেন্টসমূহ</button></a></li>
+              <li><a href=""><button class="bg-white px-4 py-2 rounded-md du-porisity-btn">হল সমূহ</button></a></li>
+              <li><a href=""><button class="bg-white px-4 py-2 rounded-md du-porisity-btn"> ডাকসু সম্পর্কিত</button></a></li>
+            </ul>
+            <p class="w-5/6">ঢাকা বিশ্ববিদ্যালয় (ঢাবি) ঢাকায় অবস্থিত বাংলাদেশের একটি স্বায়ত্তশাসিত  বিশ্ববিদ্যালয়। ১৯২১ সালে তদানীন্তন ব্রিটিশ ভারতে  শিক্ষা ব্যবস্থা অনুসরণে এটি স্থাপিত হয়। এর শিক্ষা কার্যক্রম শুরু হয় ১৯২১ সালের ১ জুলাই। সূচনালগ্নে বিভিন্ন প্রথিতযশা বৃত্তিধারী ও বিজ্ঞানীদের দ্বারা কঠোরভাবে মান নিয়ন্ত্রিত হবার প্রেক্ষাপটে এটি প্রাচ্যের অক্সফোর্ড নামে স্বীকৃতি পায়। 
+              বিশ্ববিদ্যালয়টিতে বর্তমানে ৮৩টি বিভাগ, ১৩টি ইনস্টিটিউট, ৫৬টি গবেষণা ব্যুরো ও কেন্দ্র, ২০টি আবাসিক হল ও ৪ টি ছাত্রাবাস, এবং ৭টি স্নাতক পর্যায়ের অধিভুক্ত সরকারি কলেজসহ মোট ১০৫টি অধিভুক্ত কলেজ রয়েছে। ঢাকা বিশ্ববিদ্যালয়ের কেন্দ্রীয় গ্রন্থাগার বাংলাদেশের সর্ববৃহৎ গ্রন্থাগার।
+                                                          </p></p>
+          </div>
+
+        </div>
+       </section>
     </main>
 
     
@@ -526,6 +624,7 @@
     <!-- footer section start here -->
     <footer></footer>
     <!-- footer section end here -->
+     <script src="index.js"></script>
   </body>
 </html>
 
